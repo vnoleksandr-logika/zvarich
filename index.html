@@ -2,20 +2,21 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Сайт про Лололошку</title>
+    <title>Лололошка — Мирохідeць</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f0f0f0;
+            font-family: 'Trebuchet MS', sans-serif;
+            background: #c8e6c9; /* світлий трав'яний фон */
         }
 
         .container {
             width: 1100px;
             margin: 30px auto;
-            background: #ffffff;
+            background: #f5f5f5;
             padding: 20px;
-            box-sizing: border-box;
+            box-shadow: 0 0 0 6px #6d4c41; /* ефект рамки як блок */
         }
 
         .main {
@@ -30,18 +31,23 @@
             gap: 20px;
         }
 
+        /* Назва */
         .site-title {
-            background: #e3e3e3;
+            background: linear-gradient(45deg, #81c784, #ce93d8);
             padding: 20px;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
             text-align: center;
+            color: white;
+            box-shadow: 6px 6px 0 #4e342e;
+            border: 3px solid #4e342e;
         }
 
+        /* Відео */
         .video-frame {
-            background: #e3e3e3;
+            background: #a5d6a7;
             padding: 10px;
-            text-align: center;
+            border: 3px solid #4e342e;
         }
 
         .video-frame iframe {
@@ -49,6 +55,7 @@
             height: 250px;
         }
 
+        /* Фото */
         .photos {
             display: flex;
             gap: 10px;
@@ -58,16 +65,19 @@
             width: 50%;
             height: 150px;
             object-fit: cover;
+            border: 3px solid #4e342e;
         }
 
+        /* Правий блок */
         .right {
             width: 65%;
-            background: #e3e3e3;
             padding: 20px;
+            border: 3px solid #4e342e;
+            background: linear-gradient(to bottom right, #f8bbd0, #e1bee7);
             overflow-y: auto;
         }
 
-        .right h2 {
+        h2 {
             margin-top: 20px;
         }
 
@@ -75,23 +85,28 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
+            background: white;
         }
 
         table, th, td {
-            border: 1px solid #999;
+            border: 2px solid #6d4c41;
         }
 
         th, td {
             padding: 8px;
-            text-align: left;
+        }
+
+        th {
+            background: #ce93d8;
         }
 
         footer {
             margin-top: 20px;
-            background: #d5d5d5;
+            background: #81c784;
             text-align: center;
             padding: 15px;
-            font-size: 14px;
+            font-weight: bold;
+            border: 3px solid #4e342e;
         }
     </style>
 </head>
@@ -99,15 +114,19 @@
 
 <div class="container">
     <div class="main">
+
         <div class="left">
             <div class="site-title">
                 Лололошка — Мирохідeць
             </div>
 
             <div class="video-frame">
-                <iframe src="https://www.youtube.com/embed/McKlEkW2Uj8"
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/poIBDWp0fLI?si=JE3IMECzfBoCy_my"
                         title="YouTube video player"
                         frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen>
                 </iframe>
             </div>
@@ -123,9 +142,7 @@
                 Лололошка — це загадковий мироходець (мандрівник між світами), який володіє особливим органом — «Іскрою», що дозволяє йому переміщатися між вимірами.
             </p>
 
-            <p>
-                <strong>Зовнішність:</strong> Традиційно носить блакитний шарф у клітинку, сонцезахисні окуляри та білу толстовку.
-            </p>
+            <p><strong>Зовнішність:</strong> Традиційно носить блакитний шарф у клітинку, сонцезахисні окуляри та білу толстовку.</p>
 
             <p>
                 <strong>Особливість:</strong> У більшості сезонів він страждає на амнезію, забуваючи про свої минулі пригоди після переходу в новий світ. Він мовчазний герой, проте його дії завжди впливають на долю цілих всесвітів.
@@ -136,46 +153,26 @@
             <table>
                 <tr>
                     <th>Назва сезону</th>
-                    <th>Короткий опис сюжету</th>
+                    <th>Короткий опис</th>
                 </tr>
-                <tr>
-                    <td>Нове Покоління</td>
-                    <td>Початок шляху, де Лололошка потрапляє у світ і стикається з магічними силами.</td>
-                </tr>
-                <tr>
-                    <td>Гра Бога</td>
-                    <td>Протистояння могутньому Джодаху в напівзруйнованому світі.</td>
-                </tr>
-                <tr>
-                    <td>Ідеальний Світ</td>
-                    <td>Світ майбутнього з жорстким контролем та ШІ під назвою Райя-Прайм.</td>
-                </tr>
-                <tr>
-                    <td>Голос Часу</td>
-                    <td>Пригоди в Міжсвітті з часовими аномаліями.</td>
-                </tr>
-                <tr>
-                    <td>13 Вогнів</td>
-                    <td>Історія в пустельному світі Міср зі священними вогнями.</td>
-                </tr>
-                <tr>
-                    <td>Остання Реальність</td>
-                    <td>Навчання в університеті та цифрові таємниці.</td>
-                </tr>
-                <tr>
-                    <td>Серце Всесвіту</td>
-                    <td>Пошуки легендарного артефакту.</td>
-                </tr>
+                <tr><td>Нове Покоління</td><td>Початок магічного шляху.</td></tr>
+                <tr><td>Гра Бога</td><td>Протистояння Джодаху.</td></tr>
+                <tr><td>Ідеальний Світ</td><td>Світ із ШІ Райя-Прайм.</td></tr>
+                <tr><td>Голос Часу</td><td>Часові аномалії та пригоди.</td></tr>
+                <tr><td>13 Вогнів</td><td>Священні вогні Міср.</td></tr>
+                <tr><td>Остання Реальність</td><td>Університет і цифрова таємниця.</td></tr>
+                <tr><td>Серце Всесвіту</td><td>Пошуки артефакту.</td></tr>
             </table>
 
             <h2>Ключові персонажі</h2>
 
-            <p><strong>Джодах Аві</strong> — могутній деміург, антагоніст або союзник.</p>
-            <p><strong>Райя-Прайм</strong> — ШІ-помічниця з «Ідеального Світу».</p>
-            <p><strong>Дилан</strong> — студент-програміст, союзник у розкритті таємниць.</p>
-            <p><strong>Той, що Дивиться</strong> — загадкова сутність мультивсесвіту.</p>
-            <p><strong>JDH (Джон Дейвіс Гаріс)</strong> — альтернативна версія Лололошки.</p>
+            <p><strong>Джодах Аві</strong> — могутній деміург.</p>
+            <p><strong>Райя-Прайм</strong> — ШІ-помічниця.</p>
+            <p><strong>Дилан</strong> — студент-програміст.</p>
+            <p><strong>Той, що Дивиться</strong> — сутність мультивсесвіту.</p>
+            <p><strong>JDH</strong> — альтернативна версія Лололошки.</p>
         </div>
+
     </div>
 
     <footer>
